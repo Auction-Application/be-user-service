@@ -2,6 +2,8 @@ edition = "2023";
 
 package user.v1;
 
+option go_package = ".;userPb";
+
 message User{
     string Username=1;
 	string Email=2;
