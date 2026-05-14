@@ -25,7 +25,7 @@ tidy:
 	go fix ./...
 	go fmt ./...
 
-## audit: run quality control checks
+## audit: run quality control checkstidy
 .PHONY: audit
 audit:
 	go mod tidy -diff

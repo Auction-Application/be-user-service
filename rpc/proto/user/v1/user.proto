@@ -2,10 +2,12 @@ edition = "2023";
 
 package user.v1;
 
+import "buf/validate/validate.proto";
+
 option go_package = ".;userPb";
 
 message User{
-    string Username=1;
-	string Email=2;
-	string AuthID=3;  
+    string Username=1 [(buf.validate.field).string.min_len = 1,(buf.validate.field).required = true];
+	string Email=2 [(buf.validate.field).string.email = true,(buf.validate.field).required = true];
+	string AuthID=3 [(buf.validate.field).required = true];  
 }
