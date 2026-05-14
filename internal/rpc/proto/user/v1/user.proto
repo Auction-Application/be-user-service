@@ -1,0 +1,9 @@
+edition = "2023";
+
+package user.v1;
+
+message User{
+    string Username=1;
+	string Email=2;
+	string AuthID=3;  
+}

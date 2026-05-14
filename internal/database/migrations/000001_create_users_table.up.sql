@@ -1,0 +1,1 @@
+create table if not exists users(username varchar(128) primary key, email varchar(260) not null, auth_id varchar(131072) unique not null);
