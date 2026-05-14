@@ -1,0 +1,14 @@
+version: v2
+managed:
+  enabled: true
+plugins:
+  - local: protoc-gen-go
+    opt:
+      - paths=source_relative
+    out: gen/go
+
+  - local: protoc-gen-go-grpc
+    out: gen/go
+
+inputs:
+  - directory: pb
