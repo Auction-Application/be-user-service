@@ -86,13 +86,14 @@ var File_user_v1_user_proto protoreflect.FileDescriptor
 
 const file_user_v1_user_proto_rawDesc = "" +
 	"\n" +
-	"\x12user/v1/user.proto\x12\auser.v1\x1a\x1bbuf/validate/validate.proto\"p\n" +
+	"\x12user/v1/user.proto\x12\auser.v1\x1a\x1bbuf/validate/validate.proto\"t\n" +
 	"\x04User\x12&\n" +
 	"\bUsername\x18\x01 \x01(\tB\n" +
 	"\xbaH\a\xc8\x01\x01r\x02\x10\x01R\bUsername\x12 \n" +
 	"\x05Email\x18\x02 \x01(\tB\n" +
-	"\xbaH\a\xc8\x01\x01r\x02`\x01R\x05Email\x12\x1e\n" +
-	"\x06AuthID\x18\x03 \x01(\tB\x06\xbaH\x03\xc8\x01\x01R\x06AuthIDB_\n" +
+	"\xbaH\a\xc8\x01\x01r\x02`\x01R\x05Email\x12\"\n" +
+	"\x06AuthID\x18\x03 \x01(\tB\n" +
+	"\xbaH\a\xc8\x01\x01r\x02\x10\x01R\x06AuthIDB_\n" +
 	"\vcom.user.v1B\tUserProtoP\x01Z\b.;userPb\xa2\x02\x03UXX\xaa\x02\aUser.V1\xca\x02\aUser\\V1\xe2\x02\x13User\\V1\\GPBMetadata\xea\x02\bUser::V1b\beditionsp\xe8\a"
 
 var (

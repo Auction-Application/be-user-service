@@ -52,10 +52,16 @@ func Run(port int) error {
 		fmt.Println("failed to start the server")
 		return err
 	}
+	defer listener.Close()
 
 	grpcServer := grpc.NewServer()
 
-	userPb.RegisterUserServiceServer(grpcServer, NewUserServer())
+	ctx := context.Background()
+	userServer := NewUserServer()
+
+	defer userServer.databaseConn.Close(ctx)
+
+	userPb.RegisterUserServiceServer(grpcServer, userServer)
 
 	if err := grpcServer.Serve(listener); err != nil {
 		fmt.Println("error listening the server")
