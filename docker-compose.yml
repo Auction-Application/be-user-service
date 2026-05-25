@@ -4,6 +4,7 @@ services:
   auth-db:
     image: postgres:18
     container_name: auth-db
+    restart: unless-stopped
     environment:
       POSTGRES_USER: auth_user
       POSTGRES_PASSWORD: auth_pass
