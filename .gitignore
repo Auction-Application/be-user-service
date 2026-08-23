@@ -33,3 +33,6 @@ go.work.sum
 
 /tmp
 /api
+
+# secrets
+.secrets
